@@ -1,4 +1,11 @@
-import { AppBar, Container, Box, Typography } from "@mui/material";
+import {
+  AppBar,
+  Container,
+  Box,
+  Typography,
+  Toolbar,
+  CssBaseline,
+} from "@mui/material";
 import { Calendar, momentLocalizer } from "react-big-calendar";
 import moment from "moment";
 
@@ -52,10 +59,13 @@ const localizer = momentLocalizer(moment);
 function App() {
   return (
     <Box>
-      <AppBar>
-        <Typography>Shop Challenges Mexico</Typography>
+      <CssBaseline />
+      <AppBar position="static">
+        <Toolbar>
+          <Typography variant="h4">Shop Challenges Mexico</Typography>
+        </Toolbar>
       </AppBar>
-      <Container>
+      <Container sx={{ marginTop: 2 }}>
         <Calendar
           localizer={localizer}
           events={dates}

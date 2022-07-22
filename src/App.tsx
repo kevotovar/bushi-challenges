@@ -1,6 +1,6 @@
-import { AppBar, Container, Box } from "@mui/material";
+import { AppBar, Container, Box, Typography } from "@mui/material";
 import { Calendar, momentLocalizer } from "react-big-calendar";
-import * as moment from "moment";
+import moment from "moment";
 
 import "react-big-calendar/lib/css/react-big-calendar.css";
 
@@ -14,6 +14,16 @@ const dates = [
     title: "Chop Chop Shop Premium",
     start: moment("2022-09-03T17:00:00-05:00").toDate(),
     end: moment("2022-09-03T20:00:00-05:00").toDate(),
+  },
+  {
+    title: "Chop Chop Shop Overdress",
+    start: moment("2022-09-23T17:00:00-05:00").toDate(),
+    end: moment("2022-09-23T20:00:00-05:00").toDate(),
+  },
+  {
+    title: "Chop Chop Shop Weiss Schwarz",
+    start: moment("2022-09-30T17:00:00-05:00").toDate(),
+    end: moment("2022-09-30T20:00:00-05:00").toDate(),
   },
   {
     title: "Estigia games v premium",
@@ -42,7 +52,9 @@ const localizer = momentLocalizer(moment);
 function App() {
   return (
     <Box>
-      <AppBar title="Shop Challenges" />
+      <AppBar>
+        <Typography>Shop Challenges Mexico</Typography>
+      </AppBar>
       <Container>
         <Calendar
           localizer={localizer}

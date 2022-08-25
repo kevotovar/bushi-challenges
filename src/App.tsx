@@ -14,22 +14,22 @@ import "react-big-calendar/lib/css/react-big-calendar.css";
 const dates = [
   {
     title: "Chop Chop Shop v premium",
-    start: moment("2022-09-16T17:00:00-05:00").toDate(),
+    start: moment("2022-09-16T18:00:00-05:00").toDate(),
     end: moment("2022-09-16T20:00:00-05:00").toDate(),
   },
   {
     title: "Chop Chop Shop Premium",
-    start: moment("2022-09-02T17:00:00-05:00").toDate(),
+    start: moment("2022-09-02T18:00:00-05:00").toDate(),
     end: moment("2022-09-02T20:00:00-05:00").toDate(),
   },
   {
     title: "Chop Chop Shop Overdress",
-    start: moment("2022-09-30T17:00:00-05:00").toDate(),
+    start: moment("2022-09-30T18:00:00-05:00").toDate(),
     end: moment("2022-09-30T20:00:00-05:00").toDate(),
   },
   {
     title: "Chop Chop Shop Weiss Schwarz",
-    start: moment("2022-09-09T17:00:00-05:00").toDate(),
+    start: moment("2022-09-09T18:00:00-05:00").toDate(),
     end: moment("2022-09-09T20:00:00-05:00").toDate(),
   },
   {
